@@ -25,7 +25,7 @@ def is_divisible_by_two(an_integer)
 end
 
 def random_subset(an_array, sample_size)
-  random_subset.sample(sample_size)
+  an_array.sample(sample_size)
 end
 
 def randomize(an_array)
