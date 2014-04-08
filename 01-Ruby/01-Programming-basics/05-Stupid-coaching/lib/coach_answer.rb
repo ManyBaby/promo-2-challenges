@@ -12,9 +12,9 @@ end
 
 def coach_answer_enhanced(your_message)
   # TODO: return coach answer to your_message, with additional custom rules of yours !
+  answer = coach_answer(your_message)
   if your_message.upcase == your_message
-    anwser = "I can feel your motivation son ! " + coach_answer(your_message)
-      puts answer
+    "I can feel your motivation son ! " + answer
   else puts answer
   end
 end
