@@ -3,8 +3,7 @@
 # - Just look in the doc for the right method of the String, Fixnum, and Array classes !
 
 def get_rid_of_surrounding_whitespaces(a_string)
-  length = a_string.length - 2
-  a_string[1, length]
+    a_string.strip
 end
 
 def belongs_to?(a_string, a_word)
