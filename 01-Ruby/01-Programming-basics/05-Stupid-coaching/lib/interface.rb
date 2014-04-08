@@ -5,5 +5,5 @@ your_message = ""
 while your_message != "I am going to work right now SIR !"
   puts "talk to the coach"
     your_message = gets.chomp
-    coach_answer(your_message)
+    coach_answer_enhanced(your_message)
 end
