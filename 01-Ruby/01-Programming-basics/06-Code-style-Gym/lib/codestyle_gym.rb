@@ -47,7 +47,7 @@ player.cheat
 puts player.has_won == true
 
 begin
-  player_moving.new(110)
+  PlayerMoving.new(110)
 rescue RuntimeError => e
   puts e.to_s == "Initial position must be between 1 and 100" # true
 end
