@@ -6,7 +6,7 @@ def ask_and_get(param)
 puts "What's your " + param + " ?"
 
   #- Get and return the string inputted by the user
-return gets.chomp
+param = gets.chomp
 
 end
 
