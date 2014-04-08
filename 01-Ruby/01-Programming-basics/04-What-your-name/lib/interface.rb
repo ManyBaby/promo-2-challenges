@@ -18,6 +18,6 @@ full_name = name_from_terminal
 
 #TODO: use string concatenation to build a custom message embedding the computed full_name
 
-# custom_message =
+custom_message = "You rock " + compute_name
 
 puts custom_message
