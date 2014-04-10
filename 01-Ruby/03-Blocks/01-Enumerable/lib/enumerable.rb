@@ -1,16 +1,17 @@
 def sum_odd_indexed(array)
   # TODO: computes the sum of elements at odd indices (1, 3, 5, 7, etc.)
   #       You should make use Enumerable#each_with_index
-  odd_item = array.each_with_index do |item, index|
+  odd_item =[]
+  array.each_with_index do |item, index|
     index.odd?
+    odd_item << item
   end
 
   sum = 0
-  odd_item.each do |item|
-    sum += item.to_i
-  end
+    odd_item.each do |item|
+      sum += item.to_i
+    end
   return sum
-
 end
 
 
@@ -32,24 +33,25 @@ def short_words(array, max_length)
   end
 end
 
+
+
 def first_under(array, limit)
   # TODO: Return the first number from an array that is less than limit.
   #       You should use Enumerable#find
   array.find do |item|
     item < limit
   end
-
-
 end
+
 
 def add_bang(array)
   # TODO: Take an array of strings and return a new array with "!" appended to each string.
   #       You should use Enumerable#map
   array.map do |item|
-    "#{item} !"
+    "#{item}!"
   end
-
 end
+
 
 def product(array)
   # TODO: Calculate the product of an array of numbers.
@@ -57,11 +59,11 @@ def product(array)
   array.reduce(1, :*)
 end
 
+
 def sorted_pairs(array)
   # TODO: Reorganize an array into slices of 2 elements, and sort each slice alphabetically.
   #       You should make use of Enumerable#each_slice
-
-  array.each_slice(2) |item|
+  array.each_slice(2) do |item|
     item.sort
   end
 end
