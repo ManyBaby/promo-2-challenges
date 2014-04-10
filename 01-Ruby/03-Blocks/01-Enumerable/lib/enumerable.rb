@@ -3,8 +3,8 @@ def sum_odd_indexed(array)
   #       You should make use Enumerable#each_with_index
   odd_item =[]
   array.each_with_index do |item, index|
-    index.odd?
-    odd_item << item
+    odd_item << item if index.odd?
+
   end
 
   sum = 0
@@ -59,13 +59,14 @@ def product(array)
   array.reduce(1, :*)
 end
 
-
 def sorted_pairs(array)
   # TODO: Reorganize an array into slices of 2 elements, and sort each slice alphabetically.
   #       You should make use of Enumerable#each_slice
+  tableau = []
   array.each_slice(2) do |item|
-    item.sort
+    tableau << item.sort
   end
+return tableau
 end
 
 
