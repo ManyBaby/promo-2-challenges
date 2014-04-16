@@ -14,4 +14,7 @@ class Playboy
     @conquests << lady unless @married
   end
 
+  attr_accessor :hair_length
+  attr_reader :nationality, :conquests
+
 end
