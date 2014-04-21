@@ -1,3 +1,7 @@
+require_relative 'cookbook'
+require_relative 'controller'
+
+
 class UI
   TASKS = {
     list: "- List all recipes [list]",
@@ -14,25 +18,34 @@ class UI
   def list
     # TODO: call the appropriate controller method with the proper argument(s)
     # TODO: format and display the retrieved data in a numbered list
+    @controller.controller_retrieve
   end
 
   def add
     # TODO: ask the user a recipe name
+    puts 'Enter the name of your new recipe'
+    recipe_name = gets.chomp
+    @controller.add(recipe_name)
     # TODO: call the appropriate controller method with the proper argument(s)
   end
 
   def del
     # TODO: ask the user a recipe index
+    puts 'Enter the index of the recipe you want to delete'
+    index = gets.chomp.to_i
+    @controller.delete(index)
     # TODO: call the appropriate controller method with the proper argument(s)
   end
 
   def exit
     # TODO: exit the program
+    @running = false
     # Hint: Take a look at the display method !
   end
 
   def user_input
     # TODO: Get the user input and return it
+    gets.chomp
     # [OPTIONAL] You can think of the case where the user
     # enters a wrong choice.
   end
