@@ -2,6 +2,8 @@ require 'yaml'
 require 'sqlite3'
 require 'active_record'
 require 'pathname'
+require 'yaml'
+
 
 
 # gets root of current directory
