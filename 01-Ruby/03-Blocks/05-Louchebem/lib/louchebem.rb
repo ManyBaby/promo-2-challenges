@@ -20,8 +20,20 @@ suffix = suffixes.shuffle.first
       word = word
     elsif word.include?(",")
       word = word
-    elsif word[0].include?["a", "e", "i", "o", "u", "y"]
+    elsif word.include?("'")
+      word = word
+    elsif word[0].to_s.include?("a")
       word = "l" + word + suffix
+    elsif word[0].to_s.include?("e")
+      word = "l" + word + suffix
+    elsif word[0].to_s.include?("i")
+      word = "l" + word + suffix
+    elsif word[0].to_s.include?("o")
+      word = "l" + word + suffix
+    elsif word[0].to_s.include?("u")
+     word = "l" + word + suffix
+    elsif word[0].to_s.include?("y")
+     word = "l" + word + suffix
     else
       word = word + suffix
     end

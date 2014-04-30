@@ -20,18 +20,22 @@ class JellyBean < Dessert
 
   attr_reader :flavor
 
-  def initialize(name = "", calories = 0, flavor ="")
+  def initialize(name, calories, flavor)
+    super(name , calories)
     @flavor = flavor
-    super(name)
-    super(calories)
+
   end
 
   def delicious?
-    false if @flavor == "black licorice"
+    if @flavor == "black licorice"
+      false
+    else
+      true
+    end
   end
 end
 
 
-glace = Dessert.new(glace, 199)
-puts glace.delicious?
-puts glace.healthy?
+# glace = Dessert.new(glace, 199)
+# puts glace.delicious?
+# puts glace.healthy?

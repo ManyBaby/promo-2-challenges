@@ -8,3 +8,5 @@ class Transaction
     # Nicely print transaction infos using Time#strftime.
   end
 end
+
+retrait

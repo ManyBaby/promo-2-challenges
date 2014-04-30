@@ -18,7 +18,7 @@ class UI
   def list
     # TODO: call the appropriate controller method with the proper argument(s)
     # TODO: format and display the retrieved data in a numbered list
-    @controller.controller_retrieve
+    @controller.list
   end
 
   def add

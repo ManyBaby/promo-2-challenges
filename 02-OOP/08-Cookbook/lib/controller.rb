@@ -9,15 +9,15 @@ class Controller
   end
 
   def list
-    @cookbook.retrieve_all
+    @cookbook.all
   end
 
   def add(name)
-    @cookbook.add(name)
+    @cookbook.create(name)
   end
 
   def delete(index)
-    @cookbook.delete(index)
+    @cookbook.destroy(index)
   end
 
   # TODO: Implement the methods to retrieve, add, and delete recipes through the model
