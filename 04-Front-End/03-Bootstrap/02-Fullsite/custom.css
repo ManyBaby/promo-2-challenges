@@ -1,0 +1,24 @@
+.black-footer{
+  float: left;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+.jumbotronic{
+  background-color: #FFF;
+  padding-top: 230px;
+  padding-bottom: 230px;
+}
+.horizontal-form{
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding: 30px;
+  border: 2px solid #EEE;
+  border-radius:15px;
+  box-shadow: 10px 10px 5px #EEE;
+}
+
+.vertical-spacer{
+  padding-top: 70px;
+}
