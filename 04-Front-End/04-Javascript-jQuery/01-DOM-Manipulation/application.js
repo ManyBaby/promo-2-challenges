@@ -9,11 +9,11 @@ function run_challenges() {
 
   // Ex 1. Read the content of the email input
   var email = null;  // TODO: replace null, keep the email variable.
-
+  email = "your email here";
 
 
   // Ex 2. Fill the content of the email input with your email
-
+  $(#email) = "emmanuel@skycitizen.fr";
 
 
   // Ex 3. Replace the email hint (next to the input) with 'This is my email now'
