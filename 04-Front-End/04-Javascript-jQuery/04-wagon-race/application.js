@@ -9,12 +9,15 @@ $(document).ready(function() {
 
     if (event.which == 80) { //p
     $('#player2_race td.active')
-        .removeClass('active')
+        .removeClass('active big')
         .next('td').addClass('active')
+    };
 
-    // if (event.which == )
-
-    // };
+    if (event.which == 79) { //o
+    $('#player2_race td.active')
+        .removeClass('active')
+        .next('td').addClass('active big')
+    };
     // Google "jquery keyup what key was pressed" if you don't know how
   });
 });

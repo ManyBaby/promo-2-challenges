@@ -14,3 +14,8 @@
   background: url(/img/player_2.png) no-repeat;
   background-size: 90%;
 }
+
+.big{
+  background: url(/img/bomb.jpeg) no-repeat;
+  background-size: 100%;
+}
