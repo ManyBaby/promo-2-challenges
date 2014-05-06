@@ -9,14 +9,16 @@ $(document).ready(function() {
 
     if (event.which == 80) { //p
     $('#player2_race td.active')
-        .removeClass('active big')
+        .removeClass('active')
         .next('td').addClass('active')
     };
 
     if (event.which == 79) { //o
     $('#player2_race td.active')
         .removeClass('active')
-        .next('td').addClass('active big')
+        .addClass('big')
+        .next('td')
+        .addClass('active')
     };
     // Google "jquery keyup what key was pressed" if you don't know how
   });
