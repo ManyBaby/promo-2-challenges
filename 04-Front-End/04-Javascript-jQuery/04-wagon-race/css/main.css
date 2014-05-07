@@ -1,7 +1,7 @@
 .racer_table td {
   background-color: white;
-  height: 200px;
-  width: 150px;
+  height: 50px;
+  width: 50px;
 }
 
 
@@ -18,4 +18,16 @@
 .big{
   background: url(/img/bomb.gif) no-repeat;
   background-size: 100%;
+}
+
+.player1_arrival{
+}
+
+.player2_arrival{
+}
+
+
+.flag{
+  background: url(/img/race_flag.jpeg) no-repeat;
+  background-size: 90%;
 }
