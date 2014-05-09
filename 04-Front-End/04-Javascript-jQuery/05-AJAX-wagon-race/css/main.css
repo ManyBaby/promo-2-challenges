@@ -1,0 +1,44 @@
+.racer_table td {
+  background-color: white;
+  height: 50px;
+  width: 50px;
+}
+
+
+#player1_race td.active{
+  background: url(/img/player_1.png) no-repeat;
+  background-size: 90%;
+}
+
+#player2_race td.active{
+  background: url(/img/player_2.png) no-repeat;
+  background-size: 90%;
+}
+
+.big{
+  background: url(/img/bomb.gif) no-repeat;
+  background-size: 100%;
+}
+
+.player1_arrival{
+}
+
+.player2_arrival{
+}
+
+
+.flag{
+  background: url(/img/race_flag.jpeg) no-repeat;
+  background-size: 90%;
+}
+
+.hide{
+  display: none;
+
+}
+
+form{
+  margin-top: 50px;
+  width: 30%;
+
+}
